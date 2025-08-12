@@ -1,6 +1,4 @@
-/* =======================
-   Reset básico e base
-   ======================= */
+/* ======= Reset básico ======= */
 *,
 *::before,
 *::after {
@@ -9,53 +7,39 @@
 
 html, body {
   height: 100%;
-}
-
-body {
   margin: 0;
   padding: 0;
+}
 
-  /* Fundo com o logo ocupando a tela toda */
+/* ======= Fundo com o logo ======= */
+body {
   background: #000 url('../../img/logo.png') center center / cover no-repeat;
-  /* Se quiser que o fundo “fique parado” ao rolar, ative a linha abaixo: */
-  /* background-attachment: fixed; */
-
-  /* Opcional: cor de texto padrão */
+  background-attachment: fixed;
   color: #fff;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* =======================
-   Conteúdo (genérico)
-   ======================= */
-main, .container, .content, .wrapper {
-  /* Espaço interno básico para o conteúdo não colar nas bordas */
-  padding: 24px;
-}
-
-/* =======================
-   Acessibilidade mínima
-   ======================= */
-a { color: #fff; text-decoration: underline; }
-a:hover { text-decoration: none; }
-
-/* =======================
-   Utilitários (opcional)
-   ======================= */
-
-/* Camada escura por cima do fundo, se quiser mais contraste.
-   Para usar, adicione <div class="overlay"></div> como primeiro filho de <body>. */
+/* ======= Overlay escura opcional ======= */
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   pointer-events: none;
   z-index: 1;
 }
 
-/* Se tiver um header fixo por cima, pode garantir que o conteúdo fica acima da overlay */
-header, main, footer, .app {
+/* ======= Conteúdo visível sobre o fundo ======= */
+main, header, footer, .container {
   position: relative;
   z-index: 2;
+  padding: 32px;
+}
+
+/* ======= Links ======= */
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
 }
