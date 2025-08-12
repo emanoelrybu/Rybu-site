@@ -1,13 +1,46 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>RYBU</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <main>
-    <!-- Conteúdo opcional por cima do fundo -->
-  </main>
-</body>
-</html>
+/* Reset básico */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fundo com o logo ocupando toda a tela */
+body {
+  background: #000 url('../../img/RYBU.png') center center / cover no-repeat fixed;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+/* Conteúdo visível por cima do fundo (opcional) */
+main {
+  position: relative;
+  z-index: 2;
+  padding: 32px;
+}
+
+/* Overlay opcional para dar contraste (descomente se quiser) */
+/*
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  z-index: 1;
+}
+*/
+
+/* Links (se tiver) */
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
