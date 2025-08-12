@@ -4,7 +4,7 @@ body {
   padding: 0;
   
   /* Fundo com imagem do logo */
-  background-image: url('logo.png');        /* Nome exato do arquivo */
+  background-image: url('img/logo.png');
   background-size: cover;                   /* Faz ocupar a tela toda */
   background-position: center;              /* Centraliza a imagem */
   background-repeat: no-repeat;             /* Evita repetição */
