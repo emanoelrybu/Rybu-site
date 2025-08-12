@@ -1,1 +1,56 @@
 
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === CORPO === */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000 url('img/seu-logo.png.jpg') center center / cover no-repeat fixed;
+  color: #fff;
+}
+
+/* === CABEÇALHO === */
+header {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 24px;
+}
+
+/* === SEÇÃO PRINCIPAL === */
+main {
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* === RODAPÉ === */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* === LINKS === */
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
