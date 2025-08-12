@@ -1,8 +1,24 @@
+/* Zera margens da página */
 body {
   margin: 0;
   padding: 0;
-  background-image: url('caminho/do/logo.png');
-  background-size: cover;         /* Preenche toda a página */
-  background-position: center;    /* Centraliza */
-  background-repeat: no-repeat;   /* Não repete a imagem */
+  
+  /* Fundo com imagem do logo */
+  background-image: url('logo.png');        /* Nome exato do arquivo */
+  background-size: cover;                   /* Faz ocupar a tela toda */
+  background-position: center;              /* Centraliza a imagem */
+  background-repeat: no-repeat;             /* Evita repetição */
+  height: 100vh;                            /* Garante altura da tela */
+}
+
+/* Se quiser uma camada escura para contraste do conteúdo */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);        /* Transparência escura */
+  z-index: -1;                              /* Fica atrás do conteúdo */
 }
