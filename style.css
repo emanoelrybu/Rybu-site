@@ -41,6 +41,7 @@ header {
     background: rgba(0,0,0,0.5);
     padding: 2rem;
     border-radius: 10px;
+    margin-top: 80px;
 }
 .btn {
     background-color: #ff2020;
@@ -59,7 +60,7 @@ header {
 
 /* PORTFÓLIO */
  .portfolio {
-     padding: 8rem 2rem 4rem 2rem;
+     padding: 12rem 2rem 4rem 2rem;
      background-color: transparent;
 }
 /* Título do portfólio com mais sinergia visual */
@@ -78,12 +79,21 @@ header {
 }
 }
 .portfolio-grid {
-    display: grid;
+    display: flex;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    flex-wrap: wrap;
+    justify-content: center;
     background: rgba(0,0,0,0.5); /* fundo semitransparente */
     border-radius: 16px;
     padding: 24px;
+}
+.portfolio-grid .item {
+    flex: 1 1 320px;
+    max-width: 400px;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .portfolio-grid video {
     width: 100%;
