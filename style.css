@@ -19,65 +19,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-        background-color: #b20000;
+    padding: 0.5rem 1.2rem;
+    background-color: #b20000;
     position: fixed;
     width: 100%;
-    .contato {
-        padding: 4rem 2rem;
-    }
-    .contato-title {
-        text-align: center;
-        margin-bottom: 1.5rem;
-        color: #fff;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-    }
-    .contato-form {
-        background: none;
-        padding: 2rem 1rem 1.5rem 1rem;
-        border-radius: 0;
-        box-shadow: none;
-        max-width: 420px;
-        margin: 40px auto 0 auto;
-    }
-    .contato-form form {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .contato-form input, .contato-form textarea {
-        padding: 10px;
-        border-radius: 5px;
-        border: none;
-        background: rgba(255,255,255,0.08);
-        color: #fff;
-        font-size: 1rem;
-    }
-    .contato-form input::placeholder, .contato-form textarea::placeholder {
-        color: #ccc;
-    }
-    .contato-form button {
-        background: #ff2020;
-        color: #fff;
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 1rem;
-        transition: background 0.2s;
-    }
-    .contato-form button:hover {
-        background: #ff4d4d;
-    }
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    top: 0;
+    z-index: 10;
 }
 .bg-video {
     position: absolute;
