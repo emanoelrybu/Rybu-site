@@ -90,6 +90,9 @@ header nav a:hover {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    background: rgba(0,0,0,0.5); /* fundo semitransparente */
+    border-radius: 16px;
+    padding: 24px;
 }
 .portfolio-grid video {
     width: 100%;
