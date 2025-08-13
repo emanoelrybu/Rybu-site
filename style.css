@@ -77,9 +77,9 @@ header nav a:hover {
 }
 
 /* PORTFÓLIO */
-.portfolio {
-    padding: 4rem 2rem;
-    background-color: #1a1a1a;
+ .portfolio {
+     padding: 4rem 2rem;
+     background-color: transparent;
 }
 .portfolio h2 {
     text-align: center;
