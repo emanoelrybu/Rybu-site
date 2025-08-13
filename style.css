@@ -1,7 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('fundo.jpg'); /* O nome deve ser igual ao arquivo da imagem */
+  /* Tente mudar o nome do arquivo abaixo para o nome exato da sua imagem */
+  background-image: url('fundo.jpg');
+  /* Se não funcionar, tente: */
+  /* background-image: url('./fundo.jpg'); */
+  /* Ou, se sua imagem for .png: */
+  /* background-image: url('fundo.png'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
