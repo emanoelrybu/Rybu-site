@@ -12,6 +12,10 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* HEADER */
@@ -55,7 +59,7 @@ header {
 
 /* PORTFÓLIO */
  .portfolio {
-     padding: 4rem 2rem;
+     padding: 8rem 2rem 4rem 2rem;
      background-color: transparent;
 }
 /* Título do portfólio com mais sinergia visual */
