@@ -1,9 +1,20 @@
 body {
-  margin: 0; /* Remove espaçamentos padrão */
+  margin: 0;
   padding: 0;
-  background-image: url('img/seu-logo.png.png'); /* troque pelo caminho da sua imagem */
-  background-size: cover; /* Faz a imagem cobrir todo o fundo */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita repetição */
-  height: 100vh; /* Ocupa toda a altura da tela */
+  background-image: url('minha-imagem.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.4); /* leve escurecida para destaque */
 }
