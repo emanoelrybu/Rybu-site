@@ -10,7 +10,7 @@ body {
     background-image: url('fundo.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 80px;
     min-height: 100vh;
     display: flex;
     align-items: center;
