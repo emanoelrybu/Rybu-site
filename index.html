@@ -1,23 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rybu</title>
+    <title>Rybu - Edição de Vídeos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="overlay">
-        <h1>Rybu - Edição Profissional de Vídeos</h1>
-        <p>Somos uma empresa especializada em edição de vídeos para criadores de conteúdo e para quem busca qualidade profissional.</p>
-    </div>
-    <div class="imagens">
-        <img src="img/a-logo-design-featuring-the-name-rybu-in_91EoBYndSeupePymXSsPdA_4zu8BtMyR_eKl3Qd0DOQHg.jpeg" alt="Logo Rybu 1">
-        <img src="img/a-logo-design-featuring-the-word-rybu-in_4Mj5na_RTSSMytDYjQoN0w_S_2U64ZaQBur48TV6oeCsA.jpeg" alt="Logo Rybu 2">
-        <img src="img/a-modern-logo-design-featuring-the-styli_uEyI7N2fS1Wiztfhb-fOSg_S_2U64ZaQBur48TV6oeCsA.jpeg" alt="Logo Rybu 3">
-        <img src="img/a-modern-logo-design-featuring-the-text-_gbN4YFvWQ-y8zW8HJnlg1Q_S_2U64ZaQBur48TV6oeCsA.jpeg" alt="Logo Rybu 4">
-        <img src="img/a-modern-logo-design-featuring-the-text-_H8YrFT8BT3ixhFNT5ksojw_4zu8BtMyR_eKl3Qd0DOQHg.jpeg" alt="Logo Rybu 5">
-        <img src="img/seu-logo.png.jpg" alt="Seu Logo">
-    </div>
+    <header>
+        <div class="logo">Rybu</div>
+        <nav>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transformamos suas ideias em vídeos incríveis</h1>
+            <p>Edição profissional, criatividade e impacto visual.</p>
+            <a href="#portfolio" class="btn">Ver Portfólio</a>
+        </div>
+        <video autoplay muted loop class="bg-video">
+            <source src="videos/fundo.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Nosso Portfólio</h2>
+        <div class="portfolio-grid">
+            <div class="item">
+                <video controls>
+                    <source src="videos/video1.mp4" type="video/mp4">
+                </video>
+                <p>Projeto 1 - Comercial</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="videos/video2.mp4" type="video/mp4">
+                </video>
+                <p>Projeto 2 - Evento</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="videos/video3.mp4" type="video/mp4">
+                </video>
+                <p>Projeto 3 - Institucional</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Entre em Contato</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Rybu - Edição de Vídeos | Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
