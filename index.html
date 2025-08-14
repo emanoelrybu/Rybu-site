@@ -1,70 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rybu - Edição de Vídeos</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Rybu - Edição de Vídeos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    <div class="logo"><a href="#" class="logo-link">Rybu</a></div>
-        <nav>
-            <a href="#portfolio">Portfólio</a>
-            <a href="contato.html" target="_blank" onclick="window.open('contato.html','Contato','width=500,height=600'); return false;">Contato</a>
-        </nav>
-    </header>
+  <header>
+    <img src="images/banner-video.jpg" alt="Rybu Vídeo" class="banner">
+    <h1>Rybu - Edição de Vídeos</h1>
+    <p>Conte sua história com inovação visual</p>
+    <a class="cta" href="#portfolio">Veja nosso Portfólio</a>
+  </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Transformamos suas ideias em vídeos incríveis</h1>
-            <p>Edição profissional, criatividade e impacto visual.</p>
-            <a href="#portfolio" class="btn">Ver Portfólio</a>
-        </div>
-        <video autoplay muted loop class="bg-video">
-            <source src="videos/fundo.mp4" type="video/mp4">
-            Seu navegador não suporta vídeos.
-        </video>
-    </section>
+  <section class="portfolio" id="portfolio">
+    <h2>Portfólio</h2>
+    <div class="grid">
+      <div><img src="images/projeto1-thumb.jpg"><p>Vídeo Institucional</p></div>
+      <div><img src="images/projeto2-thumb.jpg"><p>Comercial para Redes Sociais</p></div>
+    </div>
+  </section>
 
-    <section id="portfolio" class="portfolio">
-    <h2 class="portfolio-title">Portfólio</h2>
-        <div class="portfolio-grid">
-            <div class="item">
-                <video controls>
-                    <source src="videos/video1.mp4" type="video/mp4">
-                </video>
-                <p>Projeto 1 - Comercial</p>
-            </div>
-            <div class="item">
-                <video controls>
-                    <source src="videos/video2.mp4" type="video/mp4">
-                </video>
-                <p>Projeto 2 - Evento</p>
-            </div>
-            <div class="item">
-                <video controls>
-                    <source src="videos/video3.mp4" type="video/mp4">
-                </video>
-                <p>Projeto 3 - Institucional</p>
-            </div>
-        </div>
-    </section>
+  <section class="servicos">
+    <h2>Serviços</h2>
+    <ul>
+      <li>Edição para YouTube, Instagram, TikTok</li>
+      <li>Pós-produção: cor, trilha, legendas</li>
+      <li>Motion design, animações</li>
+      <li>Vídeos institucionais e comerciais</li>
+    </ul>
+  </section>
 
-    <section id="contato" class="contato">
-        <h2>Entre em Contato</h2>
-        <form id="contactForm">
-            <input type="text" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu e-mail" required>
-            <textarea placeholder="Sua mensagem" required></textarea>
-            <button type="submit" class="btn">Enviar</button>
-        </form>
-    </section>
+  <section class="sobre">
+    <h2>Sobre a Rybu</h2>
+    <img src="images/equipe.jpg" alt="Equipe Rybu">
+    <p>Equipe apaixonada por criatividade visual. Estamos prontos para contar sua história.</p>
+  </section>
 
-    <footer>
-        <p>© 2025 Rybu - Edição de Vídeos | Todos os direitos reservados</p>
-    </footer>
+  <section class="depoimentos">
+    <h2>Depoimentos</h2>
+    <blockquote>
+      <img src="images/depoimento.jpg">
+      <p>“A Rybu deixou nossos vídeos incríveis e com impacto!”<br>— Cliente Satisfeito</p>
+    </blockquote>
+  </section>
 
-    <script src="script.js"></script>
+  <section class="contato">
+    <h2>Contato</h2>
+    <form>
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" placeholder="Descreva seu projeto"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <a class="whatsapp" href="https://wa.me/seunumeroderybu" target="_blank">Fale pelo WhatsApp</a>
+  </section>
+
+  <footer>Rybu &copy; 2025</footer>
 </body>
 </html>
