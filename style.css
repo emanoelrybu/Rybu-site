@@ -1,8 +1,8 @@
 .site-wrap { max-width: 1100px; margin: 0 auto; }
 body {
-  background: #0f0f10 url('imagens/fundo-sem-fundo.png') no-repeat left 8% top;
-  /* imagem menor e alinhada à esquerda */
-  background-size: 45% auto;
+  background: #0f0f10 url('imagens/fundo3.png') no-repeat center center;
+  /* imagem menor e centralizada (restaurado) */
+  background-size: 60% auto;
   color: #f4f4f4;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   margin: 0;
@@ -10,7 +10,7 @@ body {
 }
 .header-compact header, header {
   text-align: center;
-  padding: 10px 12px; /* ainda mais compacto */
+  padding: 28px 16px;
   /* restaurando as cores anteriores (degradê) */
   background: linear-gradient(120deg, #262b3f 70%, #4fffb0);
   color: #ffffff;
@@ -27,20 +27,20 @@ body {
 }
 .banner {
   max-width: 100%;
-  height: 140px; /* altura reduzida para cabeçalho mais compacto */
+  height: 220px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 6px 30px rgba(0,0,0,0.6);
 }
 
 header h1 {
-  font-size: 1.6rem;
-  margin: 4px 0 2px; /* subir o título um pouco */
+  font-size: 2rem;
+  margin: 8px 0 6px;
 }
 header p {
-  margin: 0 0 6px;
-  font-size: 0.92rem;
-  color: rgba(255,255,255,0.92);
+  margin: 0 0 8px;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.95);
 }
 .cta {
   display:inline-block;
