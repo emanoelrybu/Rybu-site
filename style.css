@@ -1,6 +1,6 @@
 .site-wrap { max-width: 1100px; margin: 0 auto; }
 body {
-  background: #0f0f10 url('imagens/fundo3.png') no-repeat center center;
+  background: #0f0f10 url('imagens/fundo-sem-fundo.png') no-repeat center center;
   /* deixar a imagem menor e centralizada */
   background-size: 60% auto;
   color: #f4f4f4;
