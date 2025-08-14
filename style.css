@@ -1,7 +1,8 @@
 .site-wrap { max-width: 1100px; margin: 0 auto; }
 body {
-  background: #0f0f10 url('imagens/fundo3.png') no-repeat center top;
-  background-size: cover;
+  background: #0f0f10 url('imagens/fundo3.png') no-repeat center center;
+  /* deixar a imagem menor e centralizada */
+  background-size: 60% auto;
   color: #f4f4f4;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   margin: 0;
@@ -9,11 +10,20 @@ body {
 }
 header {
   text-align: center;
-  padding: 24px 16px;
-  background-color: #b20000; /* cabeçalho sólido vermelho */
+  padding: 28px 16px;
+  /* restaurando as cores anteriores (degradê) */
+  background: linear-gradient(120deg, #262b3f 70%, #4fffb0);
   color: #ffffff;
   position: relative;
   z-index: 1000;
+}
+
+/* Ajuste responsivo: em telas pequenas o background ocupa toda a área */
+@media (max-width: 900px) {
+  body {
+    background-position: top center;
+    background-size: cover;
+  }
 }
 .banner {
   max-width: 100%;
